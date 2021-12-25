@@ -1,0 +1,14 @@
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\obj\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\obj\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\obj\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\obj\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\obj\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\bin\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.exe
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\bin\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.deps.json
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\bin\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.runtimeconfig.json
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\bin\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\bin\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.dll
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\bin\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.pdb
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\obj\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.dll
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\obj\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.pdb
+C:\Users\ASUS\Desktop\Yeni klasör\DepartmentProject-26.12.2021\obj\Debug\netcoreapp3.1\DepartmentProject-26.12.2021.genruntimeconfig.cache
