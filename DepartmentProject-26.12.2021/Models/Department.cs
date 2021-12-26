@@ -6,49 +6,92 @@ namespace DepartmentProject_26._12._2021.Models
 {
     class Department
     {
-        public string Name { get; set; }
-        public double WorkerLimit { get; set; }
-        public double SalaryLimit { get; set; }
-        public Employee[] Employees { get; set; }
-        public Department(string name, double workerlimit, double salarylimit, Employee[] employees)
+        public Department(string name, int workerlimit, double salarylimit)
         {
-            Name = name;
-            WorkerLimit = workerlimit;
-            SalaryLimit = salarylimit;
-            Employees = employees;
-            if (WorkerLimit <= 1)
-            {
-
-
-                Console.WriteLine("Isci Sayini Duzgun Daxil Edin!");
-                return;
-            }
-            if (Name.Length <= 2)
-            {
-                Console.WriteLine("Yazdigini Ada Uygun Departament Yoxdur!");
-            }
-            if (SalaryLimit <= 250)
-            {
-                Console.WriteLine("Maas 250-den asagi ola bilmez");
-                return;
-            }
-            if (Employees.Length <= 0)
-            {
-                Console.WriteLine("Employees bos ola bilmez");
-                return;
-            }
-
+            this.Name = name;
+            this.WorkerLimit = workerlimit;
+            this.SalaryLimit = salarylimit;
         }
-        public double CalcAverageSalary(Department department)
+
+        private string _name;
+        private int _workerLimit;
+        private double _salaryLimit;
+
+        public string Name
         {
-            double TotalSalary = 0;
-            int count = 0;
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                if (CheckName(value))
+                {
+                    _name = value;
+                }
+            }
+        }
+        public int WorkerLimit
+        {
+            get
+            {
+                return _workerLimit;
+            }
+            set
+            {
+                if (value > 0)
+                {
+                    _workerLimit = value;
+                }
+
+            }
+        }
+        public double SalaryLimit
+        {
+            get
+            {
+                return _salaryLimit;
+            }
+            set
+            {
+                if (value > 249)
+                {
+                    _salaryLimit = value;
+                }
+            }
+        }
+
+
+        public Employee[] Employees = Array.Empty<Employee>();
+        public double ClcSalaryAverage(Department department)
+        {
+            double totalsalary = 0;
+            int counter = 0;
             foreach (Employee item in department.Employees)
             {
-                TotalSalary += item.Salary;
-                count++;
+                totalsalary += item.Salary;
+                counter++;
             }
-            return TotalSalary / count;
+            return totalsalary / counter;
+
+        }
+        public bool CheckName(string str)
+        {
+            if (!string.IsNullOrWhiteSpace(str))
+            {
+                if (str.Length > 1)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public override string ToString()
+        {
+            
+            Console.WriteLine("--------------------------");
+            return $"\nDepartament adi:{Name}\nEmakdas limiti:{WorkerLimit}\nMaksimum maas limiti:{SalaryLimit}\n";
+
         }
     }
 }

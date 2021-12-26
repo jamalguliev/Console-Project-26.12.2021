@@ -7,15 +7,13 @@ namespace DepartmentProject_26._12._2021.Interface
 {
     interface IHumanResourceManager
     {
-            Employee[] employees { get; }
-            Department[] departments { get; }
+        public Department[] Departments { get; }
+        void AddDepartment(string name, int workerlimit, double salarylimit);
 
-            void AddDepartment(Department[] departments, string name, double workerlimit, double salarylimit);
-            Department[] GetDepartments(Department[] departments);
-            void EditDepartaments(string name, string newname);
-            void AddEmployee(string no, string fullname, string position, double salary, string departmentName);
-            void RemoveEmployee(string no, string departmentname);
-            void EditEmploye(string no, string fullname, double salary, string position);
-        }
+        void EditDepartments(string name, string newname);
+        void AddEmployee(string departmentname, string fullname, string position, double salary);
+        void RemoveEmployee(string no, string departmentname);
+        void EditEmployee(string departmentname, string no, string position, double salary);
     }
+}
 
